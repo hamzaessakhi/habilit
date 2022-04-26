@@ -42,11 +42,14 @@ if (isset($_POST['btn_submit'])) {
                 header('Location: Profs.php');
             }
             else{
-                header('Location:./login.php?error=invalid');
+
+               header('Location:./login.php?error=invalid');
+
             }
         }
     } else {
-        header('Location:./login.php?error=vide');
+       // header('Location:./login.php?error=vide');
+        echo "Oops! Something went wrong. Please try again later.";
     }
 }
 
